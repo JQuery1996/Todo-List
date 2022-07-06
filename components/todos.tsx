@@ -8,7 +8,7 @@ import { MakeTodo } from "./makeTodo";
 
 export function Todos() {
     const [todos, todosSet] = useState<ITodo[]>([]);
-    const [loading, loadingSet] = useState<boolean>(false);
+    const [loading, loadingSet] = useState<boolean>(true);
 
     useEffect(() => {
         async function fetchTodos() {
